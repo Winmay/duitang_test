@@ -108,16 +108,22 @@ a:link, a:visited {
 	z-index: 900;
 }
 
-#dt-nav.show #dt-nav-btn-cover, #dt-nav.show #dt-nav-content-cover {
+#dt-nav.show:hover #dt-nav-btn-cover, 
+#dt-nav.show:hover #dt-nav-content-cover {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-#dt-nav.show #dt-nav-btn, #dt-nav.show #dt-nav-btn-cover {
+
+#dt-nav.show:hover #dt-nav-btn, 
+#dt-nav.show:hover #dt-nav-btn-cover {
 	height: 40px;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius:0;
 }
-#dt-nav.show #dt-nav-content, #dt-nav.show #dt-nav-content-cover, #dt-nav.show #dt-nav-neck {
+
+#dt-nav.show:hover #dt-nav-content, 
+#dt-nav.show:hover #dt-nav-content-cover,
+#dt-nav.show:hover #dt-nav-neck {
 	display: block;
 }
 #dt-nav-btn-cover {
