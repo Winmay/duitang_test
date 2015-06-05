@@ -629,12 +629,15 @@ var target = null;
 function collbtn_abso(){ 
 	$('.grid .imgholder .collbtn').css('position','absolute');
 	$('.grid .imgholder .collbtn').css('top','');
+	target = null;
 }
 
 function collbtn_fix(obj){
 	
 	
     var elm = $('.grid .imgholder .collbtn');
+	
+	target = $(obj);
 	
 	var startPos=$(obj).offset().top-$(document).scrollTop();
 	
@@ -648,6 +651,12 @@ function collbtn_fix(obj){
 	}
 	
 } 
+
+window.onscroll = function() {
+	if( target === null )
+		return;
+	collbtn_fix(target);
+}
 
 </script>
 </body>
