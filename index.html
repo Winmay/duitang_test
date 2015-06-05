@@ -22,7 +22,7 @@
         	<div class="dt-wrap">
             	<a id="dt-logo" href="javascript:void(0)"></a>
                 
-                <div id="dt-nav" onmouseover="show()" onmouseout="hide()">
+                <div id="dt-nav" class="show">
                 	<div id="dt-nav-btn-cover"></div>
                     <div id="dt-nav-btn">分类<i></i></div>
                     <div id="dt-nav-content-cover"></div>
@@ -600,15 +600,6 @@
 
 
 <script type="text/javascript">
-function show() {
-	$("#dt-nav").attr("class","show");
-	$("#dt-nav-content").show();
-	//$("#dt-nav").addClass("show"); //添加样式
-}
-
-function hide() {
-	$("#dt-nav").removeClass("show");
-}
 
 var che = true;
 function shopcheck() {
@@ -620,18 +611,6 @@ function shopcheck() {
 		che = !che;
 	}
 }
-
-//图片边框设置
-/*
-window.onload=function(){
-			
-	$.each($(".image_a"),function(){
-		var proimgHeight = $(this).children("img").height();
-		$(this).children("u").css("height",proimgHeight-2);	
-	})
-			
-}
-*/
 
 $(document).ready(function() {
 	//blocksit define
