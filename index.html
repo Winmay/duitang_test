@@ -624,6 +624,8 @@ $(document).ready(function() {
 	});
 });
 
+var target = null;
+
 function collbtn_abso(){ 
 	$('.grid .imgholder .collbtn').css('position','absolute');
 	$('.grid .imgholder .collbtn').css('top','');
@@ -645,8 +647,6 @@ function collbtn_fix(obj){
 		$(elm).css('top','65px'); 
 	}
 	
-	//$(elm).css('position',((startPos) < 64) ? 'fixed' : 'absolute'); 
-    //$(elm).css('top',((startPos) < 64) ? '65px' : ''); 
 } 
 
 </script>
